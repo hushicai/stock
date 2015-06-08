@@ -78,8 +78,8 @@
             cell.funda_reasonable_price = cell.funda_coupon / averageProfitRtNext + toFloat(cell.funda_value) - 1;
 
             if (toFloat(cell.funda_profit_rt_next) >= averageProfitRtNext
-            && toFloat(cell.funda_base_est_dis_rt) < 0
-            && toFloat(cell.funda_current_price) <  cell.funda_reasonable_price
+                && toFloat(cell.funda_base_est_dis_rt) < 0
+                && toFloat(cell.funda_current_price) <  cell.funda_reasonable_price
             ) {
                 fundA.push({
                     '代码': id,
@@ -124,7 +124,7 @@
             cell.fundb_reasonable_price = (toFloat(cell.fundb_base_price) - abrate[0] * fundA.funda_reasonable_price) / abrate[1];
 
             if (toFloat(cell.fundb_current_price) < cell.fundb_reasonable_price
-            && toFloat(cell.fundb_base_est_dis_rt) < 0
+                && toFloat(cell.fundb_base_est_dis_rt) < 0
             ) {
                 fundB.push({
                     '代码': id,
