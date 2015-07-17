@@ -19,7 +19,8 @@ if (!roe || !earning || !year) {
 
 earning = +earning;
 year = +year;
-roe = +roe;
+// 因为roe大于30%是不可持续的，所以如果roe超过30%就记为30%。
+roe = Math.min(+roe, 0.3);
 
 var increasing = Math.pow((1 + roe), year);
 var increasingForEarning = Math.pow((1 + earning), year);
