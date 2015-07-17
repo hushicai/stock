@@ -25,7 +25,7 @@ roe = Math.min(+roe, 0.3);
 var increasing = Math.pow((1 + roe), year);
 var increasingForEarning = Math.pow((1 + earning), year);
 
-console.log('合理的pb值: %s', increasing / increasingForEarning);
+console.log('pb: %s', increasing / increasingForEarning);
 
 function help() {
     console.log('Usage: node roe-and-pb --earning 0.15 --roe 0.18 --year 6');
