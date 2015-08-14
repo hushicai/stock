@@ -14,7 +14,7 @@ var profit = argv.profit;
 var earning = argv.earning;
 // 未来5年
 var year = 5;
-// 估值锚
+// 估值锚，也许可以参考行业平均pe
 var valuation = 10;
 
 if (!profit || !earning) {
