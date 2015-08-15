@@ -1,0 +1,6 @@
+[submodule "submodule/echarts"]
+	path = submodule/echarts
+	url = https://github.com/hushicai/echarts.git
+[submodule "submodule/zrender"]
+	path = submodule/zrender
+	url = https://github.com/hushicai/zrender.git
